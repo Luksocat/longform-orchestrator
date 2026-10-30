@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "stateDir": "/absolute/path/to/longform-private/runner",
+  "routingPolicyPath": "/absolute/path/to/longform-private/routing-policy.json",
+  "bwrapExecutable": "/usr/bin/bwrap",
+  "nodeExecutable": "/absolute/path/to/node",
+  "sanitizedPublicBrief": true,
+  "providers": {
+    "claude": {
+      "executable": "/absolute/path/to/claude",
+      "oauthTokenFile": "/absolute/path/to/longform-private/claude-oauth-token",
+      "allowedHosts": [
+        "api.anthropic.com"
+      ]
+    },
+    "codex": {
+      "executable": "/absolute/path/to/codex",
+      "codexHome": "/absolute/path/to/longform-private/dedicated-codex-home",
+      "allowedHosts": [
+        "chatgpt.com",
+        "auth.openai.com",
+        "api.openai.com"
+      ]
+    }
+  },
+  "repos": {
+    "example-repo": {
+      "path": "/absolute/path/to/your-repository"
+    }
+  },
+  "commands": {
+    "unit-tests": {
+      "executable": "/absolute/path/to/node",
+      "args": [
+        "node_modules/vitest/vitest.mjs",
+        "run"
+      ],
+      "deadlineMs": 600000,
+      "copy": true,
+      "binds": [
+        {
+          "from": "/absolute/path/to/your-repository/node_modules",
+          "to": "node_modules"
+        }
+      ],
+      "path": [
+        "/absolute/path/to/node-bin"
+      ]
+    }
+  },
+  "projectProfilePath": "/absolute/path/to/longform-private/project-profile.json"
+}

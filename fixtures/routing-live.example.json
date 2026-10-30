@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "id": "live-complexity-example-v1",
+  "routes": [
+    {
+      "id": "codex-routine",
+      "level": "ROUTINE",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "low",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "codex-standard",
+      "level": "STANDARD",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "medium",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "codex-complex",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "high",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "codex-expert",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "high",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-routine",
+      "level": "ROUTINE",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "low",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-standard",
+      "level": "STANDARD",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "medium",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-complex",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "high",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-expert",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "xhigh",
+      "roles": [
+        "worker",
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    }
+  ]
+}

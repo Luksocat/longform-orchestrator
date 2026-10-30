@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "id": "astra-two-tier-v2",
+  "workflow": "ASTRA_TWO_TIER",
+  "assessmentRequired": true,
+  "routes": [
+    {
+      "id": "codex-complex-worker",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "roles": ["worker"],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "claude-complex-reviewer",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "roles": ["reviewer"],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "codex-expert-worker",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "roles": ["worker"],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "claude-expert-reviewer",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "roles": ["reviewer"],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "claude-complex-legacy-worker",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "roles": ["worker"],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "codex-complex-legacy-reviewer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "roles": ["reviewer"],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "claude-expert-legacy-worker",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "roles": ["worker"],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "codex-expert-legacy-reviewer",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "roles": ["reviewer"],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "sol-assessor",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "roles": ["assessor"],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "astra-overseer",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "roles": ["overseer", "moderator", "advisor"],
+      "simulation": false,
+      "enabled": true
+    }
+  ]
+}

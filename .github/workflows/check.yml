@@ -1,0 +1,37 @@
+name: check
+
+# Build and run the whole test suite on every push to main and every pull
+# request. The controller's test-command runner and the live tests use
+# Bubblewrap, which needs unprivileged user namespaces; GitHub's Ubuntu runners
+# restrict those through AppArmor, so the workflow lifts that restriction and
+# verifies Bubblewrap's required proc and device mounts before running the
+# sandbox tests. CI fails if any sandbox capability probe would skip them.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install Bubblewrap for the sandbox tests
+        run: sudo apt-get update && sudo apt-get install -y bubblewrap
+      - name: Allow unprivileged user namespaces and prove the sandbox works
+        run: |
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
+          bwrap --unshare-all --ro-bind / / --proc /proc --dev /dev -- /bin/true
+      - run: npm ci
+      - run: npm run check
+        env:
+          LONGFORM_REQUIRE_SANDBOX_TESTS: "1"
+      - run: npm run pilot

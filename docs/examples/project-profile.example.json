@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "protectedDocuments": [],
+  "protectedFolders": [],
+  "codePaths": [
+    "src",
+    "scripts",
+    "tests"
+  ],
+  "kinds": {
+    "rules": {
+      "title": "Domain rules and policy",
+      "expert": true,
+      "worker": [
+        "State each proposed rule separately with its inputs, outcome, boundary cases, and supporting sources.",
+        "Keep accepted decisions distinct from proposals. Ask for a decision when the task requires one."
+      ],
+      "reviewer": [
+        "Challenge ambiguous inputs, conflicting rules, missing boundary cases, and unsubstantiated claims of acceptance.",
+        "Explain each proposal in terms of its effect on the intended audience."
+      ]
+    },
+    "writing": {
+      "title": "Long-form writing",
+      "worker": [
+        "Use the source pack to maintain terminology, argument structure, chronology, tone, and continuity.",
+        "Label new material and distinguish supported claims from interpretation."
+      ],
+      "reviewer": [
+        "Check structure, continuity, clarity, voice, pacing, and whether each important claim is supported."
+      ]
+    },
+    "engineering-design": {
+      "title": "Engineering design",
+      "worker": [
+        "State invariants, interfaces, failure cases, retries, concurrency, and recovery behavior.",
+        "Tie each requirement to its source and specify how it can be verified."
+      ],
+      "reviewer": [
+        "Construct counterexamples for failure, retry, concurrency, and partial-state handling.",
+        "Check that proposed behavior and validation cover the accepted requirements."
+      ]
+    },
+    "code": {
+      "title": "Code changes",
+      "expert": true,
+      "worker": [
+        "Work within the pinned repository scope and explain each changed behavior.",
+        "Provide meaningful tests for changed behavior; the controller records actual test results."
+      ],
+      "reviewer": [
+        "Check correctness, error paths, concurrency, security boundaries, and unintended changes."
+      ]
+    },
+    "owner-brief": {
+      "title": "Decision brief",
+      "worker": [
+        "Write one clear question per decision with bounded options, consequences, and a recommendation.",
+        "Separate verified findings, assumptions, unresolved choices, and the next permitted action."
+      ],
+      "reviewer": [
+        "Check that the options cover the meaningful alternatives and do not claim an unmade decision."
+      ]
+    },
+    "records": {
+      "title": "Records and filing",
+      "proposals": false,
+      "worker": [
+        "Preserve record identity, content, authority, ownership, and status.",
+        "Keep a clear manifest of proposed file changes and verify the resulting bytes."
+      ],
+      "reviewer": [
+        "Check exact content, target identity, scope, and preservation of unrelated material."
+      ]
+    }
+  }
+}

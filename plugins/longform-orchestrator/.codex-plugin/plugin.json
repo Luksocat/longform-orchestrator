@@ -1,0 +1,6 @@
+{
+  "name": "longform-orchestrator",
+  "version": "0.1.0",
+  "description": "Durable orchestration for complex research, writing, design, and engineering tasks.",
+  "skills": "./skills/"
+}

@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+const [major, minor] = process.versions.node.split('.').map(Number);
+if (major < 22 || (major === 22 && minor < 13) || major === 23) {
+  process.stderr.write('longform-orchestrator requires Node 22.13+ LTS or Node 24+. Select a supported Node runtime.\n');
+  process.exitCode = 1;
+} else {
+  import('../dist/src/cli.js').then(({ main }) => main()).catch(error => {
+    process.stderr.write('longform-orchestrator: ' + error.message + '\n');
+    process.exitCode = 1;
+  });
+}

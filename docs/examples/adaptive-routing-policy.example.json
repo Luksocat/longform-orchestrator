@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "id": "capability-bidirectional-v1-example",
+  "workflow": "CAPABILITY_BIDIRECTIONAL_V1",
+  "assessmentRequired": true,
+  "adaptive": {
+    "version": 1,
+    "intake": "DISABLED",
+    "preference": "GUIDED",
+    "evaluationPlans": [
+      {
+        "id": "unfrozen-example-plan",
+        "digest": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ],
+    "maxEvidenceAgeDays": 90,
+    "oversight": {
+      "defaultMode": "COORDINATION_ONLY",
+      "moduleAt": {
+        "openTasks": 4,
+        "coupling": 1
+      },
+      "programmeAt": {
+        "openTasks": 12,
+        "coupling": 6
+      }
+    },
+    "floorExceptions": [],
+    "ceiling": {
+      "continuations": 1
+    }
+  },
+  "routes": [
+    {
+      "id": "sol-complex-xhigh-worker",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "sol-complex-max-worker",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "sol-expert-max-worker",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-complex-high-worker",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-complex-xhigh-worker",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-complex-max-worker",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "max",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-expert-xhigh-worker",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-expert-max-worker",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "max",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "sol-complex-xhigh-reviewer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "sol-complex-max-reviewer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "sol-expert-max-reviewer",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-complex-high-reviewer",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-complex-xhigh-reviewer",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-complex-max-reviewer",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "max",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-expert-xhigh-reviewer",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "opus-expert-max-reviewer",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "max",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "sol-xhigh-overseer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "roles": [
+        "overseer"
+      ],
+      "simulation": false,
+      "enabled": true,
+      "demands": [
+        "BOUNDED"
+      ]
+    },
+    {
+      "id": "sol-max-overseer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "roles": [
+        "overseer"
+      ],
+      "simulation": false,
+      "enabled": true,
+      "demands": [
+        "BOUNDED",
+        "MODULE"
+      ]
+    },
+    {
+      "id": "opus-xhigh-overseer",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "roles": [
+        "overseer"
+      ],
+      "simulation": false,
+      "enabled": true,
+      "demands": [
+        "BOUNDED"
+      ]
+    },
+    {
+      "id": "opus-max-overseer",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "max",
+      "roles": [
+        "overseer"
+      ],
+      "simulation": false,
+      "enabled": true,
+      "demands": [
+        "BOUNDED",
+        "MODULE"
+      ]
+    },
+    {
+      "id": "astra-xhigh-overseer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "roles": [
+        "overseer"
+      ],
+      "simulation": false,
+      "enabled": true,
+      "demands": [
+        "MODULE",
+        "PROGRAMME"
+      ]
+    },
+    {
+      "id": "astra-max-overseer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "roles": [
+        "overseer"
+      ],
+      "simulation": false,
+      "enabled": true,
+      "demands": [
+        "MODULE",
+        "PROGRAMME"
+      ]
+    },
+    {
+      "id": "sol-assessor",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "roles": [
+        "assessor"
+      ],
+      "simulation": false,
+      "enabled": true
+    },
+    {
+      "id": "astra-advisor-moderator",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "roles": [
+        "advisor",
+        "moderator"
+      ],
+      "simulation": false,
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Longform Orchestrator"
+  short_description: "Durable tasks and automatic model routing"
+  default_prompt: "Use $longform-orchestrator to handle this task, select models by complexity, and ask me only for missing decisions."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "id": "astra-two-tier-v2",
+  "workflow": "ASTRA_TWO_TIER",
+  "assessmentRequired": true,
+  "routes": [
+    {
+      "id": "codex-complex-worker",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "xhigh",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-complex-reviewer",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "high",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "codex-expert-worker",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "max",
+      "roles": [
+        "worker"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-expert-reviewer",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "xhigh",
+      "roles": [
+        "reviewer"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-complex-legacy-worker",
+      "level": "COMPLEX",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "high",
+      "roles": [
+        "worker"
+      ],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "codex-complex-legacy-reviewer",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "xhigh",
+      "roles": [
+        "reviewer"
+      ],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "claude-expert-legacy-worker",
+      "level": "EXPERT",
+      "provider": "claude",
+      "model": "REPLACE_WITH_CLAUDE_MODEL",
+      "effort": "xhigh",
+      "roles": [
+        "worker"
+      ],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "codex-expert-legacy-reviewer",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "max",
+      "roles": [
+        "reviewer"
+      ],
+      "legacyPairing": true,
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "sol-assessor",
+      "level": "COMPLEX",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "high",
+      "roles": [
+        "assessor"
+      ],
+      "simulation": false,
+      "enabled": false
+    },
+    {
+      "id": "astra-overseer",
+      "level": "EXPERT",
+      "provider": "codex",
+      "model": "REPLACE_WITH_CODEX_MODEL",
+      "effort": "xhigh",
+      "roles": [
+        "overseer",
+        "moderator",
+        "advisor"
+      ],
+      "simulation": false,
+      "enabled": false
+    }
+  ]
+}

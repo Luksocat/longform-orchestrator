@@ -1,0 +1,2028 @@
+{
+  "schemaVersion": 1,
+  "programme": "EXAMPLE_PROGRAMME",
+  "mode": "SYNTHETIC_HELD_PLANNING_EXAMPLE",
+  "limitations": [
+    "All names, task records, sources and statuses are fictional.",
+    "The records deliberately represent held non-simulation tasks to exercise authorization boundaries.",
+    "No remote identifiers, credentials, existing user data or real acceptance decisions are included."
+  ],
+  "tasks": [
+    {
+      "id": "PLAN",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Define the report scope",
+      "scope": "Synthetic example: define the report scope. Do not execute this planning record.",
+      "deliverable": "Example planning record: Define the report scope",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-01",
+          "revision": "example-1",
+          "digest": "0422aa47b17b4f2c76338f56749df4e0d5ba23cfcf1c75f9e9652ad7ddb02b1a"
+        },
+        {
+          "evidenceId": "example-note-01",
+          "revision": "example-1",
+          "digest": "93c4393e897094c9473ce9be33b0eac5e95f96ce78c31f003c173972c757d042"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-01"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "RESEARCH",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Gather reference material",
+      "scope": "Synthetic example: gather reference material. Do not execute this planning record.",
+      "deliverable": "Example planning record: Gather reference material",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "PLAN"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-02",
+          "revision": "example-1",
+          "digest": "c0b41310a0160f137c7314dc59207f4e1c266c227ea8d842c08eb81f3303f6c4"
+        },
+        {
+          "evidenceId": "example-note-02",
+          "revision": "example-1",
+          "digest": "fd5e09fa40fa98acb7200bb35850b0847e8fa45254056276f00fd09528ebe830"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-02"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "DRAFT",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Draft the analysis",
+      "scope": "Synthetic example: draft the analysis. Do not execute this planning record.",
+      "deliverable": "Example planning record: Draft the analysis",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "RESEARCH"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work.",
+        "INPUT_CHECKS_PENDING"
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-03",
+          "revision": "example-1",
+          "digest": "7b002ad7309549a67f99d71f7d8dc8f51319d5e8fb00cbc11c9f5218bf4f9360"
+        },
+        {
+          "evidenceId": "example-note-03",
+          "revision": "example-1",
+          "digest": "86fe59e6b03b9952fdd50c7df570baf718097ed1bbe276218666bedbe657a24c"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-03"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "FACTCHECK",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Check factual claims",
+      "scope": "Synthetic example: check factual claims. Do not execute this planning record.",
+      "deliverable": "Example planning record: Check factual claims",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "DRAFT"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-04",
+          "revision": "example-1",
+          "digest": "e82cc1b2c6c5cb2f4a824a25291f441c0ae17d932d857b60c6aaf94248160db4"
+        },
+        {
+          "evidenceId": "example-note-04",
+          "revision": "example-1",
+          "digest": "463b62eda2d5a51a587cad9d334ebc23465777c3ca9ad3cbadd8dc8d625d2017"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-04"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "REVIEW",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Review the draft",
+      "scope": "Synthetic example: review the draft. Do not execute this planning record.",
+      "deliverable": "Example planning record: Review the draft",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "FACTCHECK"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-05",
+          "revision": "example-1",
+          "digest": "a98235c9711f7c3c0c0fb760996f1a123fbdbdef0a10fc42571760191166f9af"
+        },
+        {
+          "evidenceId": "example-note-05",
+          "revision": "example-1",
+          "digest": "9a0e27088eed3edeb0513e78e0e6e60db36862f6376b2bf8f9e187b16020493d"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-05"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "DECISION",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Choose the evaluation criteria",
+      "scope": "Synthetic example: choose the evaluation criteria. Do not execute this planning record.",
+      "deliverable": "Example planning record: Choose the evaluation criteria",
+      "specVersion": 1,
+      "status": "WAITING_OWNER",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "CANDIDATE",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "REVIEW"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work.",
+        "REVIEW_CRITERIA_PENDING"
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-06",
+          "revision": "example-1",
+          "digest": "ef4db8b068abedb2e5c537ca3ce7fdff4fa7084d198eedb56f52e09685a28af4"
+        },
+        {
+          "evidenceId": "example-note-06",
+          "revision": "example-1",
+          "digest": "437d901e12aab748f8aed0a11a5c00a21d957bb1e7959aeeb660a69c86bb0c0e"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-06"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": true,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "REFINE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Refine the outline",
+      "scope": "Synthetic example: refine the outline. Do not execute this planning record.",
+      "deliverable": "Example planning record: Refine the outline",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "DECISION"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-07",
+          "revision": "example-1",
+          "digest": "9920663f2447734af20e1f9e0fc6ddf4858982a7537e9a18c66c31876689d183"
+        },
+        {
+          "evidenceId": "example-note-07",
+          "revision": "example-1",
+          "digest": "53f93db9fc6bf813632dba2e584eb5cc5bde727de64517fff16737e1115e7305"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-07"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ASSEMBLE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "RESEARCH",
+      "title": "Assemble the report",
+      "scope": "Synthetic example: assemble the report. Do not execute this planning record.",
+      "deliverable": "Example planning record: Assemble the report",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "REFINE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-08",
+          "revision": "example-1",
+          "digest": "42df66b22dbc8d31d76257f2d412c867f181d8ec1741af3f73ce49abab32c417"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-08"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "IMPLEMENT",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Implement the example tool",
+      "scope": "Synthetic example: implement the example tool. Do not execute this planning record.",
+      "deliverable": "Example planning record: Implement the example tool",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "ASSEMBLE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-09",
+          "revision": "example-1",
+          "digest": "c59e54f2140cd06f9d782607616a3909a5655dad8a069dd11761f4537e3e4862"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-09"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "VERIFY",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Verify the example tool",
+      "scope": "Synthetic example: verify the example tool. Do not execute this planning record.",
+      "deliverable": "Example planning record: Verify the example tool",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "IMPLEMENT"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-10",
+          "revision": "example-1",
+          "digest": "d756119582e9f3f7f27bfec496bd9ecb0a5640e25b2eebf8570568d8c9380dc6"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-10"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "INTEGRATE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Integrate supporting material",
+      "scope": "Synthetic example: integrate supporting material. Do not execute this planning record.",
+      "deliverable": "Example planning record: Integrate supporting material",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "VERIFY"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-11",
+          "revision": "example-1",
+          "digest": "903e180a90be91bbe7b3a9bbcf94655e94ab0fcc3497cd77412f18228cea13d8"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-11"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "MEASURE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Measure acceptance criteria",
+      "scope": "Synthetic example: measure acceptance criteria. Do not execute this planning record.",
+      "deliverable": "Example planning record: Measure acceptance criteria",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "INTEGRATE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-12",
+          "revision": "example-1",
+          "digest": "63b8ab412f92e285b1df925b9337b2a3740f3b2abf669892946b1c92168e6b4a"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-12"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "REVISE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Revise unresolved findings",
+      "scope": "Synthetic example: revise unresolved findings. Do not execute this planning record.",
+      "deliverable": "Example planning record: Revise unresolved findings",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "MEASURE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-13",
+          "revision": "example-1",
+          "digest": "182f6f52eeb254731ff5ebbcc169a503c0fe3efd5838cb39987d7eeef297ad95"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-13"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "RECONCILE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Reconcile cross-document claims",
+      "scope": "Synthetic example: reconcile cross-document claims. Do not execute this planning record.",
+      "deliverable": "Example planning record: Reconcile cross-document claims",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "REVISE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-14",
+          "revision": "example-1",
+          "digest": "292c175ca5a5342bd8dce67c55dba2609c52106f8f140e02c78fd805c1d755a1"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-14"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "FREEZE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Freeze the review candidate",
+      "scope": "Synthetic example: freeze the review candidate. Do not execute this planning record.",
+      "deliverable": "Example planning record: Freeze the review candidate",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "RECONCILE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-15",
+          "revision": "example-1",
+          "digest": "b68e2e5e20717021ed7fe3b2cd5ede600d9e3f7781cb61bf7d43de483a749476"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-15"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "PILOT",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Run a demonstration",
+      "scope": "Synthetic example: run a demonstration. Do not execute this planning record.",
+      "deliverable": "Example planning record: Run a demonstration",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "FREEZE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-16",
+          "revision": "example-1",
+          "digest": "2b20bc91aa06cb6ac1beb4de3d73b08b4fa789e2e7d6d6bfd42a89df703b5eca"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-16"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ASSESS",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Assess the demonstration",
+      "scope": "Synthetic example: assess the demonstration. Do not execute this planning record.",
+      "deliverable": "Example planning record: Assess the demonstration",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "PILOT"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-17",
+          "revision": "example-1",
+          "digest": "1d7fff70d88ec368f3cc0d107742d3f7d3c866a5753d2dfb98ad23fe2982879a"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-17"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "PREPARE",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Prepare a release candidate",
+      "scope": "Synthetic example: prepare a release candidate. Do not execute this planning record.",
+      "deliverable": "Example planning record: Prepare a release candidate",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "ASSESS"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-18",
+          "revision": "example-1",
+          "digest": "7368a2c40d035b91eb946d9be7d70f702bf8cc877f025e73fe1ea19edd2b4901"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-18"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "CONFIRM",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Confirm the final review",
+      "scope": "Synthetic example: confirm the final review. Do not execute this planning record.",
+      "deliverable": "Example planning record: Confirm the final review",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "PREPARE"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-19",
+          "revision": "example-1",
+          "digest": "dc161a22875542a090045b85e1a1553b93b3e03e545ca63072883eeace5b36ba"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-19"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "DELIVER",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Deliver the approved package",
+      "scope": "Synthetic example: deliver the approved package. Do not execute this planning record.",
+      "deliverable": "Example planning record: Deliver the approved package",
+      "specVersion": 1,
+      "status": "BLOCKED",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [
+        "CONFIRM"
+      ],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-20",
+          "revision": "example-1",
+          "digest": "06d49201571d4f5eaaea39621bbeaabd252dd582011a31894eebcd391336d06b"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-20"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": false,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "CHOOSE-HOST",
+      "programme": "EXAMPLE_PROGRAMME",
+      "lane": "ENGINEERING",
+      "title": "Choose an execution host",
+      "scope": "Synthetic example: choose an execution host. Do not execute this planning record.",
+      "deliverable": "Example planning record: Choose an execution host",
+      "specVersion": 1,
+      "status": "WAITING_OWNER",
+      "dimensions": {
+        "authorization": "HELD",
+        "sourceEffectuation": "UNKNOWN",
+        "implementation": "HELD",
+        "review": "NONE",
+        "release": "NOT_AUTHORIZED"
+      },
+      "dependencies": [],
+      "blockers": [
+        "SYNTHETIC_FIXTURE_NOT_AUTHORIZED",
+        "Exact acceptance evidence and execution scope are required before any real work."
+      ],
+      "sources": [
+        {
+          "evidenceId": "example-source-21",
+          "revision": "example-1",
+          "digest": "6d10daf72b916f42f10bbf85b6ed0c3eb39976acb7e3da36fae4bffc4f23dfe5"
+        }
+      ],
+      "specificationAuthenticated": false,
+      "providers": [
+        "codex",
+        "claude"
+      ],
+      "operations": [
+        "READ_LOCAL"
+      ],
+      "writePaths": [],
+      "resources": [
+        "fixture://example/source-21"
+      ],
+      "risk": "HIGH",
+      "reviewPolicy": {
+        "required": true,
+        "crossProvider": true,
+        "independentAudits": true
+      },
+      "acceptance": [
+        {
+          "id": "source-defined-gate",
+          "description": "Define and authenticate task-specific acceptance evidence before execution. This synthetic record cannot authorize work.",
+          "evidenceKind": "SOURCE_BINDING"
+        }
+      ],
+      "requiredTests": [],
+      "decisionRequired": true,
+      "priority": 50,
+      "estimatedCostUsd": 0,
+      "budget": {
+        "deadlineMs": 60000,
+        "maxAttempts": 1,
+        "maxCostUsd": 0,
+        "maxTokens": 1000
+      },
+      "artifactRevision": "example-1",
+      "simulation": false,
+      "createdAt": "2030-01-01T00:00:00.000Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "example-source-01",
+      "taskId": "PLAN",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-01",
+      "revision": "example-1",
+      "digest": "0422aa47b17b4f2c76338f56749df4e0d5ba23cfcf1c75f9e9652ad7ddb02b1a",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for PLAN. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-02",
+      "taskId": "RESEARCH",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-02",
+      "revision": "example-1",
+      "digest": "c0b41310a0160f137c7314dc59207f4e1c266c227ea8d842c08eb81f3303f6c4",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for RESEARCH. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-03",
+      "taskId": "DRAFT",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-03",
+      "revision": "example-1",
+      "digest": "7b002ad7309549a67f99d71f7d8dc8f51319d5e8fb00cbc11c9f5218bf4f9360",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for DRAFT. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-04",
+      "taskId": "FACTCHECK",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-04",
+      "revision": "example-1",
+      "digest": "e82cc1b2c6c5cb2f4a824a25291f441c0ae17d932d857b60c6aaf94248160db4",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for FACTCHECK. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-05",
+      "taskId": "REVIEW",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-05",
+      "revision": "example-1",
+      "digest": "a98235c9711f7c3c0c0fb760996f1a123fbdbdef0a10fc42571760191166f9af",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for REVIEW. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-06",
+      "taskId": "DECISION",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-06",
+      "revision": "example-1",
+      "digest": "ef4db8b068abedb2e5c537ca3ce7fdff4fa7084d198eedb56f52e09685a28af4",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for DECISION. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-07",
+      "taskId": "REFINE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-07",
+      "revision": "example-1",
+      "digest": "9920663f2447734af20e1f9e0fc6ddf4858982a7537e9a18c66c31876689d183",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for REFINE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-08",
+      "taskId": "ASSEMBLE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-08",
+      "revision": "example-1",
+      "digest": "42df66b22dbc8d31d76257f2d412c867f181d8ec1741af3f73ce49abab32c417",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for ASSEMBLE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-09",
+      "taskId": "IMPLEMENT",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-09",
+      "revision": "example-1",
+      "digest": "c59e54f2140cd06f9d782607616a3909a5655dad8a069dd11761f4537e3e4862",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for IMPLEMENT. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-10",
+      "taskId": "VERIFY",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-10",
+      "revision": "example-1",
+      "digest": "d756119582e9f3f7f27bfec496bd9ecb0a5640e25b2eebf8570568d8c9380dc6",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for VERIFY. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-11",
+      "taskId": "INTEGRATE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-11",
+      "revision": "example-1",
+      "digest": "903e180a90be91bbe7b3a9bbcf94655e94ab0fcc3497cd77412f18228cea13d8",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for INTEGRATE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-12",
+      "taskId": "MEASURE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-12",
+      "revision": "example-1",
+      "digest": "63b8ab412f92e285b1df925b9337b2a3740f3b2abf669892946b1c92168e6b4a",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for MEASURE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-13",
+      "taskId": "REVISE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-13",
+      "revision": "example-1",
+      "digest": "182f6f52eeb254731ff5ebbcc169a503c0fe3efd5838cb39987d7eeef297ad95",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for REVISE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-14",
+      "taskId": "RECONCILE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-14",
+      "revision": "example-1",
+      "digest": "292c175ca5a5342bd8dce67c55dba2609c52106f8f140e02c78fd805c1d755a1",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for RECONCILE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-15",
+      "taskId": "FREEZE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-15",
+      "revision": "example-1",
+      "digest": "b68e2e5e20717021ed7fe3b2cd5ede600d9e3f7781cb61bf7d43de483a749476",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for FREEZE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-16",
+      "taskId": "PILOT",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-16",
+      "revision": "example-1",
+      "digest": "2b20bc91aa06cb6ac1beb4de3d73b08b4fa789e2e7d6d6bfd42a89df703b5eca",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for PILOT. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-17",
+      "taskId": "ASSESS",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-17",
+      "revision": "example-1",
+      "digest": "1d7fff70d88ec368f3cc0d107742d3f7d3c866a5753d2dfb98ad23fe2982879a",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for ASSESS. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-18",
+      "taskId": "PREPARE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-18",
+      "revision": "example-1",
+      "digest": "7368a2c40d035b91eb946d9be7d70f702bf8cc877f025e73fe1ea19edd2b4901",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for PREPARE. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-19",
+      "taskId": "CONFIRM",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-19",
+      "revision": "example-1",
+      "digest": "dc161a22875542a090045b85e1a1553b93b3e03e545ca63072883eeace5b36ba",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for CONFIRM. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-20",
+      "taskId": "DELIVER",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-20",
+      "revision": "example-1",
+      "digest": "06d49201571d4f5eaaea39621bbeaabd252dd582011a31894eebcd391336d06b",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for DELIVER. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-source-21",
+      "taskId": "CHOOSE-HOST",
+      "kind": "LOCAL",
+      "uri": "fixture://example/source-21",
+      "revision": "example-1",
+      "digest": "6d10daf72b916f42f10bbf85b6ed0c3eb39976acb7e3da36fae4bffc4f23dfe5",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic local fixture only; no external source was retrieved."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic source for CHOOSE-HOST. This example conveys no real approval or project status."
+      }
+    },
+    {
+      "id": "example-note-01",
+      "taskId": "PLAN",
+      "kind": "LOCAL",
+      "uri": "fixture://example/note-01",
+      "revision": "example-1",
+      "digest": "93c4393e897094c9473ce9be33b0eac5e95f96ce78c31f003c173972c757d042",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic note; no external evidence or owner decision."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic additional note 1 for PLAN."
+      }
+    },
+    {
+      "id": "example-note-02",
+      "taskId": "RESEARCH",
+      "kind": "LOCAL",
+      "uri": "fixture://example/note-02",
+      "revision": "example-1",
+      "digest": "fd5e09fa40fa98acb7200bb35850b0847e8fa45254056276f00fd09528ebe830",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic note; no external evidence or owner decision."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic additional note 2 for RESEARCH."
+      }
+    },
+    {
+      "id": "example-note-03",
+      "taskId": "DRAFT",
+      "kind": "LOCAL",
+      "uri": "fixture://example/note-03",
+      "revision": "example-1",
+      "digest": "86fe59e6b03b9952fdd50c7df570baf718097ed1bbe276218666bedbe657a24c",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic note; no external evidence or owner decision."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic additional note 3 for DRAFT."
+      }
+    },
+    {
+      "id": "example-note-04",
+      "taskId": "FACTCHECK",
+      "kind": "LOCAL",
+      "uri": "fixture://example/note-04",
+      "revision": "example-1",
+      "digest": "463b62eda2d5a51a587cad9d334ebc23465777c3ca9ad3cbadd8dc8d625d2017",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic note; no external evidence or owner decision."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic additional note 4 for FACTCHECK."
+      }
+    },
+    {
+      "id": "example-note-05",
+      "taskId": "REVIEW",
+      "kind": "LOCAL",
+      "uri": "fixture://example/note-05",
+      "revision": "example-1",
+      "digest": "9a0e27088eed3edeb0513e78e0e6e60db36862f6376b2bf8f9e187b16020493d",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic note; no external evidence or owner decision."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic additional note 5 for REVIEW."
+      }
+    },
+    {
+      "id": "example-note-06",
+      "taskId": "DECISION",
+      "kind": "LOCAL",
+      "uri": "fixture://example/note-06",
+      "revision": "example-1",
+      "digest": "437d901e12aab748f8aed0a11a5c00a21d957bb1e7959aeeb660a69c86bb0c0e",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic note; no external evidence or owner decision."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic additional note 6 for DECISION."
+      }
+    },
+    {
+      "id": "example-note-07",
+      "taskId": "REFINE",
+      "kind": "LOCAL",
+      "uri": "fixture://example/note-07",
+      "revision": "example-1",
+      "digest": "53f93db9fc6bf813632dba2e584eb5cc5bde727de64517fff16737e1115e7305",
+      "retrievedAt": "2030-01-01T00:00:00.000Z",
+      "authorityTier": "UNVERIFIED",
+      "authentication": "LOCAL_IMPORT",
+      "currentness": "UNKNOWN",
+      "claims": [
+        "Synthetic note; no external evidence or owner decision."
+      ],
+      "metadata": {
+        "synthetic": true,
+        "content": "Synthetic additional note 7 for REFINE."
+      }
+    }
+  ]
+}

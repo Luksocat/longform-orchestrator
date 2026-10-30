@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "longform-orchestrator",
+  "version": "0.1.0",
+  "description": "Durable orchestration for complex research, writing, design, and engineering tasks.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Longform Orchestrator",
+        "shortDescription": "Durable tasks and automatic model routing",
+        "longDescription": "Keep task state, evidence, dependencies, checkpoints and review decisions across long work. Start with the mock demonstration; live providers require explicit configuration and capability verification.",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ]
+      }
+    }
+  }
+}
